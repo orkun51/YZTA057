@@ -7,10 +7,10 @@
 
 # Takımımız
 
-|                | İsim                 | Akademik Geçmiş 🎓                         |  LinkedIn Hesabı     |  Rol                                |
+|                | İsim                 | Akademik Geçmiş                             |  LinkedIn Hesabı     |  Rol                                |
 | -------------- | -------------------- | ------------------------------------------- | -------------------- |------------------------------------ |
-| ![Foto1](https://media.licdn.com/dms/image/v2/D4D03AQEcFLdj-ktrsA/profile-displayphoto-shrink_800_800/B4DZTvqbLzGcAg-/0/1739187664723?e=1757548800&v=beta&t=ZIS-Gnv0tUYzkujVyR8x3GUB48IwnZsJY9n3efuf6xo) | Gülşah Kadıoğlu  | 🎓Eskişehir Osmangazi University - B.Sc. in Electrical and Electronics Engineering<br>Gazi University - M.Sc. in Data Science<br>🎓Istanbul University - B.Sc. in Child Development  | https://www.linkedin.com/in/gulsahkadioglu/ | Scrum Master & Product Owner & Developer |
-| ![Foto2](https://media.licdn.com/dms/image/v2/D4D03AQFlDSshM0XZ0g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1669376963478?e=1757548800&v=beta&t=NpJvtvgdGHfnsOeDP1Wa1crF2ThyVxYnBNVqMA-X8hY) | Orkun Koçak  | 🎓TED University - B.Sc. in Mathematics Education<br>M.Sc. in Computer Science  | https://www.linkedin.com/in/orkun-kocak/ | Scrum Master & Product Owner & Developer |
+| ![Foto1](https://media.licdn.com/dms/image/v2/D4D03AQEcFLdj-ktrsA/profile-displayphoto-shrink_800_800/B4DZTvqbLzGcAg-/0/1739187664723?e=1757548800&v=beta&t=ZIS-Gnv0tUYzkujVyR8x3GUB48IwnZsJY9n3efuf6xo) | Gülşah Kadıoğlu  | 🎓Eskişehir Osmangazi University - B.Sc. in Electrical and Electronics Engineering<br><br>Gazi University - M.Sc. in Data Science<br><br>🎓Istanbul University - B.Sc. in Child Development  | https://www.linkedin.com/in/gulsahkadioglu/ | Scrum Master & Product Owner & Developer |
+| ![Foto2](https://media.licdn.com/dms/image/v2/D4D03AQFlDSshM0XZ0g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1669376963478?e=1757548800&v=beta&t=NpJvtvgdGHfnsOeDP1Wa1crF2ThyVxYnBNVqMA-X8hY) | Orkun Koçak  | 🎓TED University - B.Sc. in Mathematics Education<br>TED University - M.Sc. in Computer Science  | https://www.linkedin.com/in/orkun-kocak/ | Scrum Master & Product Owner & Developer |
 
 
 # 👩‍🏫 Özel Öğrenci Takip Paneli
