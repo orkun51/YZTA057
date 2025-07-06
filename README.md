@@ -9,8 +9,8 @@
 
 | Fotoğraf       | İsim         | Akademik Geçmiş   |  Rol                 | LinkedIn Hesabı                     |
 | -------------- | ------------ | ----------------- | -------------------- |------------------------------------ |
-
-| ![Foto1](https://media.licdn.com/dms/image/v2/D4D03AQFlDSshM0XZ0g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1669376963478?e=1757548800&v=beta&t=NpJvtvgdGHfnsOeDP1Wa1crF2ThyVxYnBNVqMA-X8hY) | Orkun Koçak  | TED University — B.Sc. in Mathematics Education, M.Sc. in Computer Science  | https://www.linkedin.com/in/orkun-kocak |
+| ![Foto2](https://media.licdn.com/dms/image/v2/D4D03AQEcFLdj-ktrsA/profile-displayphoto-shrink_800_800/B4DZTvqbLzGcAg-/0/1739187664723?e=1757548800&v=beta&t=ZIS-Gnv0tUYzkujVyR8x3GUB48IwnZsJY9n3efuf6xo) | Gülşah Kadıoğlu  | Eskişehir Osmangazi University — B.Sc. in Electrics and Electronics Engineering & Gazi University — M.Sc. in Data Science  | https://www.linkedin.com/in/gulsahkadioglu/ |
+| ![Foto2](https://media.licdn.com/dms/image/v2/D4D03AQFlDSshM0XZ0g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1669376963478?e=1757548800&v=beta&t=NpJvtvgdGHfnsOeDP1Wa1crF2ThyVxYnBNVqMA-X8hY) | Orkun Koçak  | TED University — B.Sc. in Mathematics Education, M.Sc. in Computer Science  | https://www.linkedin.com/in/orkun-kocak/ |
 
 * Gülşah Kadıoğlu
 * Orkun Koçak
