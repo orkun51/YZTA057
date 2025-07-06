@@ -1,11 +1,7 @@
 <img width="2048" height="2048" alt="Image" src="https://github.com/user-attachments/assets/63a2a5c1-8e1a-48b1-8ff1-7ec8758a3637" />
 
-# Takım İsmi
-# YZTA057
+# 👥 YZTA057 Takım Üyeleri
 
-# 👥 Takım Üyeleri
-
-# Takımımız
 
 |                | İsim                 | Akademik Geçmiş                             |  LinkedIn            |  Takımdaki Rolü                     |
 | -------------- | -------------------- | ------------------------------------------- | -------------------- |------------------------------------ |
