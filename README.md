@@ -9,6 +9,8 @@
 | ![Foto2](https://media.licdn.com/dms/image/v2/D4D03AQFlDSshM0XZ0g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1669376963478?e=1757548800&v=beta&t=NpJvtvgdGHfnsOeDP1Wa1crF2ThyVxYnBNVqMA-X8hY) | Orkun Koçak  | 🎓TED University - M.Sc. in Computer Science<br><br>🎓TED University - B.Sc. in Mathematics Education  | https://www.linkedin.com/in/orkun-kocak/ | Scrum Master & Product Owner & Developer |
 
 
+
+<br><br>PROJEMİZ
 ## 🧠 Beni Anla 👩‍🏫 Özel Öğrenci Takip Paneli
 
 > **Özel gereksinimli öğrencilerle çalışan öğretmenler için yapay zeka destekli gözlem ve destek paneli**
