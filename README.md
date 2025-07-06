@@ -10,7 +10,7 @@
 
 
 
-<br><br>PROJEMİZ
+<br><br>📌PROJEMİZ
 ## 🧠 Beni Anla 👩‍🏫 Özel Öğrenci Takip Paneli
 
 > **Özel gereksinimli öğrencilerle çalışan öğretmenler için yapay zeka destekli gözlem ve destek paneli**
