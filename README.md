@@ -10,7 +10,7 @@
 | Fotoğraf       | İsim         | Akademik Geçmiş   |  Rol                 | LinkedIn Hesabı                     |
 | -------------- | ------------ | ----------------- | -------------------- |------------------------------------ |
 
-| ![Foto1](https://avatars.githubusercontent.com/u/184788678?v=4) | Orkun Koçak  | TED University — B.Sc. in Mathematics Education, M.Sc. in Computer Science  | Phttps://www.linkedin.com/in/orkun-kocak   |) |
+| ![Foto1](https://media.licdn.com/dms/image/v2/D4D03AQFlDSshM0XZ0g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1669376963478?e=1757548800&v=beta&t=NpJvtvgdGHfnsOeDP1Wa1crF2ThyVxYnBNVqMA-X8hY)) | Orkun Koçak  | TED University — B.Sc. in Mathematics Education, M.Sc. in Computer Science  | Phttps://www.linkedin.com/in/orkun-kocak   |) |
 
 * Gülşah Kadıoğlu
 * Orkun Koçak
