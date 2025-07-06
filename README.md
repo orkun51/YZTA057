@@ -7,8 +7,10 @@
 
 # Takımımız
 
-| Fotoğraf       | İsim         | Akademik Geçmiş   | LinkedIn Hesabı                                          |
-| -------------- | ------------ | ----------------- | -------------------------------------------------------- |
+| Fotoğraf       | İsim         | Akademik Geçmiş   |  Rol                 | LinkedIn Hesabı                     |
+| -------------- | ------------ | ----------------- | -------------------- |------------------------------------ |
+
+| ![Foto1](https://avatars.githubusercontent.com/u/184788678?v=4) | Orkun Koçak  | TED University — B.Sc. in Mathematics Education, M.Sc. in Computer Science  | Phttps://www.linkedin.com/in/orkun-kocak   |) |
 
 * Gülşah Kadıoğlu
 * Orkun Koçak
