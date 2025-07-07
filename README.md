@@ -77,6 +77,7 @@ Veriye dayalı bireyselleştirilmiş eğitim yaklaşımlarını inceleyen ve uyg
 # Product BackLog URL
 
 Proje planlama ve görev takibi süreçlerini ? uygulamasından gerçekleştirdik. Link:
+![Image](https://github.com/user-attachments/assets/9e612cd3-a4a2-41cb-aefd-d9e18ca0178b)
 
 ---
 
