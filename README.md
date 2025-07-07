@@ -1,6 +1,6 @@
 # Projenin Amblemi
 
-<img width="2048" height="2048" alt="Image" src="https://github.com/user-attachments/assets/63a2a5c1-8e1a-48b1-8ff1-7ec8758a3637" />
+<img width="1024" height="1024" alt="Image" src="https://github.com/user-attachments/assets/63a2a5c1-8e1a-48b1-8ff1-7ec8758a3637" />
 
 # Takım İsmi
 
@@ -72,9 +72,12 @@ Veriye dayalı bireyselleştirilmiş eğitim yaklaşımlarını inceleyen ve uyg
 | Veritabanı | PostgreSQL                     |
 | AI Modülü  | Scikit-learn / TensorFlow Lite |
 | Diğer      | JWT Auth, REST API, Bootstrap  |
+
 ---
 # Product BackLog URL
-...
+
+Proje planlama ve görev takibi süreçlerini ? uygulamasından gerçekleştirdik. Link:
+
 ---
 
 ## 🔄 Scrum Süreci
