@@ -1,18 +1,23 @@
-TAKIM LOGOSU
+# Projenin Amblemi
+
 <img width="2048" height="2048" alt="Image" src="https://github.com/user-attachments/assets/63a2a5c1-8e1a-48b1-8ff1-7ec8758a3637" />
 
-# 👥 YZTA057 Takım Üyeleri
+# Takım İsmi
 
+YZTA057 
+
+# Takım Üyeleri
 
 |                | İsim                 | Akademik Geçmiş                             |  LinkedIn            |  Takımdaki Rolü                     |
 | -------------- | -------------------- | ------------------------------------------- | -------------------- |------------------------------------ |
 | ![Foto1](https://media.licdn.com/dms/image/v2/D4D03AQEcFLdj-ktrsA/profile-displayphoto-shrink_800_800/B4DZTvqbLzGcAg-/0/1739187664723?e=1757548800&v=beta&t=ZIS-Gnv0tUYzkujVyR8x3GUB48IwnZsJY9n3efuf6xo) | Gülşah Kadıoğlu  | <br>✏️Gazi University - M.Sc. in Data Science<br><br>🎓Eskişehir Osmangazi University - B.Sc. in Electrical and Electronics Engineering<br><br>🎓Istanbul University - B.Sc. in Child Development<br><br>  | https://www.linkedin.com/in/gulsahkadioglu/ | Scrum Master & Product Owner & Developer |
 | ![Foto2](https://media.licdn.com/dms/image/v2/D4D03AQFlDSshM0XZ0g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1669376963478?e=1757548800&v=beta&t=NpJvtvgdGHfnsOeDP1Wa1crF2ThyVxYnBNVqMA-X8hY) | Orkun Koçak  | 🎓TED University - M.Sc. in Computer Science<br><br>🎓TED University - B.Sc. in Mathematics Education  | https://www.linkedin.com/in/orkun-kocak/ | Scrum Master & Product Owner & Developer |
 
+# Projenin İsmi
 
-
-<br><br>📌PROJEMİZ
 ## 🧠 Beni Anla 👩‍🏫 Özel Öğrenci Takip Paneli
+
+# Projenin Açıklaması
 
 > **Özel gereksinimli öğrencilerle çalışan öğretmenler için yapay zeka destekli gözlem ve destek paneli**
 
@@ -20,7 +25,7 @@ TAKIM LOGOSU
 
 ---
 
-## 🎯 Proje Amacı
+## 🎯 Projenin Amacı
 
 Bu proje, özel gereksinimli öğrencilerle çalışan öğretmenlerin;
 
@@ -28,6 +33,33 @@ Bu proje, özel gereksinimli öğrencilerle çalışan öğretmenlerin;
 * Yapay zeka destekli analizlerle öğrenciyi daha iyi tanımasını,
 * Gelişimi izleyip kişiselleştirilmiş eğitim planları oluşturmasını sağlamak amacıyla geliştirilmiştir.
 
+---
+## 🧩 Özellikler
+
+* 👤 **Öğrenci Profili**: Temel bilgiler, güçlü/zayıf yönler, bireyselleştirilmiş notlar
+* 📅 **Günlük Gözlem**: Öğretmenin seçtiği parametrelere göre öğrenci analizi
+* 📈 **Gelişim Takibi**: Grafikler ve örüntü tespiti (örneğin haftalık dikkat eğrisi)
+* 🧠 **AI Destekli Öneriler**: Etkinlik veya müdahale önerileri
+* 📝 **Raporlama**: Yazdırılabilir PDF raporlar, veli görüşme çıktıları
+* 🔐 **Güvenli Giriş Sistemi**: Yetkilendirme, kullanıcı yönetimi
+---
+
+# Hedef Kitle
+...
+
+---
+## 🧪 Kullanılan Teknolojiler
+
+| Katman     | Teknoloji                      |
+| ---------- | ------------------------------ |
+| Backend    | Python + Flask                 |
+| Frontend   | React.js                       |
+| Veritabanı | PostgreSQL                     |
+| AI Modülü  | Scikit-learn / TensorFlow Lite |
+| Diğer      | JWT Auth, REST API, Bootstrap  |
+---
+# Product BackLog URL
+...
 ---
 
 ## 🔄 Scrum Süreci
@@ -50,32 +82,8 @@ Proje çevik geliştirme (Agile) prensiplerine göre **SCRUM metodolojisi** ile 
 * Kullanıcı yönetimi (öğretmen / admin)
 * Erişilebilirlik özellikleri (renk körlüğü, sesli yardım vb.)
 
----
 
-## 🧩 Özellikler
-
-* 👤 **Öğrenci Profili**: Temel bilgiler, güçlü/zayıf yönler, bireyselleştirilmiş notlar
-* 📅 **Günlük Gözlem**: Öğretmenin seçtiği parametrelere göre öğrenci analizi
-* 📈 **Gelişim Takibi**: Grafikler ve örüntü tespiti (örneğin haftalık dikkat eğrisi)
-* 🧠 **AI Destekli Öneriler**: Etkinlik veya müdahale önerileri
-* 📝 **Raporlama**: Yazdırılabilir PDF raporlar, veli görüşme çıktıları
-* 🔐 **Güvenli Giriş Sistemi**: Yetkilendirme, kullanıcı yönetimi
-
----
-
-## 🧪 Kullanılan Teknolojiler
-
-| Katman     | Teknoloji                      |
-| ---------- | ------------------------------ |
-| Backend    | Python + Flask                 |
-| Frontend   | React.js                       |
-| Veritabanı | PostgreSQL                     |
-| AI Modülü  | Scikit-learn / TensorFlow Lite |
-| Diğer      | JWT Auth, REST API, Bootstrap  |
-
----
-
-## 📌 Sprint 1 – Planlama ve Temel Yapı Kurulumu (20 Haziran – 6 Temmuz)
+## 📌 Sprint 1 Raporu– Planlama ve Temel Yapı Kurulumu (20 Haziran – 6 Temmuz)
 
 ### 🌟 Sprint 1 Hedefi
 
@@ -106,7 +114,7 @@ Proje çevik geliştirme (Agile) prensiplerine göre **SCRUM metodolojisi** ile 
 * [ ] Form sayfalarının ilk prototipleri
 * [ ] GitHub `dev`, `main` branch yapısının oluşturulması
 
-### 🔁 Daily Scrum Notları (Örnek)
+### 🔁 Sprint 1 Daily Scrum Notları (Örnek)
 
 ```
 🧑‍💻 Bugün: Öğrenci formu arayüzünü tamamladım  
