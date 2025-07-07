@@ -168,7 +168,17 @@ Proje çevik geliştirme (Agile) prensiplerine göre **SCRUM metodolojisi** ile 
 **Toplam Puan:** /50
 
 ---
+![Image](https://github.com/user-attachments/assets/2db8c0d8-f2f0-45ec-9e69-57d92ab7ff5d)
 
+![Image](https://github.com/user-attachments/assets/c5a7ea76-1117-4a76-9e7f-39ea6334c838)
+
+![Image](https://github.com/user-attachments/assets/6b96127a-2a71-40e2-8f93-25e138215a57)
+
+![Image](https://github.com/user-attachments/assets/156303dc-5bb5-4ebf-89ac-2618b5c16d59)
+
+![Image](https://github.com/user-attachments/assets/5a810ddb-f160-4a52-ba78-e05863829f12)
+
+![Image](https://github.com/user-attachments/assets/20f2ffaa-1eb2-4f76-829e-9f6ad4766cb8)
 ## 🚀 Kurulum
 
 ### 1. Reposu klonlayın
