@@ -45,7 +45,22 @@ Bu proje, özel gereksinimli öğrencilerle çalışan öğretmenlerin;
 ---
 
 # Hedef Kitle
-...
+"Beni Anla – Özel Öğrenci Takip Paneli", özel gereksinimli öğrencilerle çalışan eğitimciler başta olmak üzere, öğrencilerin gelişimini çok yönlü desteklemeyi hedefleyen tüm paydaşlara hitap eder:
+
+👩‍🏫 Özel Eğitim Öğretmenleri:
+Öğrencilerin bireysel gelişimlerini sistemli şekilde izlemek, günlük gözlemlerle kayıt altına almak ve yapay zekâ destekli analizlerle daha etkili eğitim planları oluşturmak isteyen öğretmenler.
+
+🏫 Rehberlik ve Psikolojik Danışmanlar (PDR Uzmanları):
+Öğrencilerin davranışsal ve duygusal örüntülerini inceleyerek doğru yönlendirmelerde bulunmak isteyen uzmanlar.
+
+👨‍👩‍👧‍👦 Veliler / Ebeveynler:
+Çocuklarının gelişim süreçlerini daha şeffaf ve anlaşılır şekilde takip etmek, öğretmenlerden gelen raporları yorumlamak ve evde destekleyici adımlar atmak isteyen aile bireyleri.
+
+🧑‍💼 Okul Yöneticileri ve Eğitim Koordinatörleri:
+Öğrenci gelişim süreçlerini sistematik hale getirmek ve öğretmenlerin gözlemlerini daha etkili kullanabilmesini sağlamak isteyen yöneticiler.
+
+📊 Eğitim Danışmanları ve Akademisyenler:
+Veriye dayalı bireyselleştirilmiş eğitim yaklaşımlarını inceleyen ve uygulamaya aktarmak isteyen araştırmacılar, danışmanlar.
 
 ---
 ## 🧪 Kullanılan Teknolojiler
