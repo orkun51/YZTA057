@@ -224,6 +224,52 @@ Toplantı yapılmış, tüm görevler anlık olarak Sprint Board üzerinden kont
 
 ---
 
+📌 Eksikler ve Giderme Durumu (Sprint 1)
+
+YZTA Bootcamp jürisi tarafından bildirilen eksikler aşağıdaki gibidir. Takım olarak Sprint 1 sonrasında bu eksikleri belirledik ve tamamlamaya başladık. Her bir başlık için açıklama ve çözüm durumu aşağıda yer almaktadır:
+
+Eksik Başlık
+
+Açıklama
+
+Durum
+
+✅ Sprint Notları
+
+docs/sprint1_notes.md dosyasında notlar yazılmıştır.
+
+✅ Tamamlandı
+
+📸 Daily Scrum SS
+
+screenshots/daily_scrum.png dosyası eklenecek.
+
+⏳ Eklenecek
+
+📸 Ürün Durumu SS
+
+screenshots/product_progress.png dosyası hazırlanıyor.
+
+⏳ Eklenecek
+
+📝 Sprint Review
+
+docs/sprint1_review.md dosyasında yazılacak.
+
+⏳ Hazırlanıyor
+
+📊 Tahmini Sprint Puanı
+
+README içinde tablo olarak yer almakta, ancak içeriği detaylanacak.
+
+✅ Eklendi
+
+📸 Sprint Board SS
+
+Jira / Trello görüntüsü screenshots/sprint_board.png olarak eklenecek.
+
+⏳ Eklenecek
+
 ## 🚀 Kurulum
 
 ### 1. Reposu klonlayın
