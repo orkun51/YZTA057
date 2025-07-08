@@ -167,7 +167,7 @@ Proje planlama ve görev takibi süreçlerini Trello uygulamasından gerçekleş
 
 ---
 
-### 🔁 Sprint 1 Daily Scrum Notları (Örnek)
+### 🔁 Sprint 1 Daily Scrum Notları
 Toplantı yapılmış, tüm görevler anlık olarak Sprint Board üzerinden kontrol edilmiştir.
 ```
 🧑‍💻 Bugün: Öğrenci formu arayüzünü tamamladım  
@@ -210,7 +210,7 @@ Toplantı yapılmış, tüm görevler anlık olarak Sprint Board üzerinden kont
 
 ---
 
-## 📊 Sprint 1 Puanlama Mantığı (YZTA Bootcamp'e Göre)
+## 📊 Sprint 1 Puanlama Mantığı (YZTA Bootcamp'e Göre) Tamamlanması Tahmin Edilen Puan
 
 | Kriter                                  | Açıklama                                                        | Puan (0-10) |
 | --------------------------------------- | --------------------------------------------------------------- | ----------- |
