@@ -1,10 +1,16 @@
+---
+
 # Projenin Amblemi
 
 <img width="1024" height="1024" alt="Image" src="https://github.com/user-attachments/assets/63a2a5c1-8e1a-48b1-8ff1-7ec8758a3637" />
 
+---
+
 # Takım İsmi
 
 YZTA057 
+
+---
 
 # Takım Üyeleri
 
@@ -13,39 +19,47 @@ YZTA057
 | ![Foto1](https://media.licdn.com/dms/image/v2/D4D03AQEcFLdj-ktrsA/profile-displayphoto-shrink_800_800/B4DZTvqbLzGcAg-/0/1739187664723?e=1757548800&v=beta&t=ZIS-Gnv0tUYzkujVyR8x3GUB48IwnZsJY9n3efuf6xo) | Gülşah Kadıoğlu  | <br>✏️Gazi University - M.Sc. in Data Science<br><br>🎓Eskişehir Osmangazi University - B.Sc. in Electrical and Electronics Engineering<br><br>🎓Istanbul University - B.Sc. in Child Development<br><br>  | https://www.linkedin.com/in/gulsahkadioglu/ | Scrum Master & Product Owner & Developer |
 | ![Foto2](https://media.licdn.com/dms/image/v2/D4D03AQFlDSshM0XZ0g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1669376963478?e=1757548800&v=beta&t=NpJvtvgdGHfnsOeDP1Wa1crF2ThyVxYnBNVqMA-X8hY) | Orkun Koçak  | 🎓TED University - M.Sc. in Computer Science<br><br>🎓TED University - B.Sc. in Mathematics Education  | https://www.linkedin.com/in/orkun-kocak/ | Scrum Master & Product Owner & Developer |
 
-# Projenin İsmi
+---
 
-## 🧠 Beni Anla 👩‍🏫 Özel Öğrenci Takip Paneli
+# 🧠  Projenin İsmi
 
-# Projenin Açıklaması
-
-> **Özel gereksinimli öğrencilerle çalışan öğretmenler için yapay zeka destekli gözlem ve destek paneli**
-
-**Beni Anla**, öğretmenlerin sınıf ortamında öğrencilerini daha yakından tanımasını, davranış ve gelişim süreçlerini kayıt altına almasını ve kişiselleştirilmiş öneriler almasını sağlayan web tabanlı bir sistemdir. Yapay zeka desteğiyle, öğretmene öğrencinin dikkat, duygu durumu ve etkileşim verileri hakkında analiz sunar.
+##  *Beni Anla 👩‍🏫 Özel Öğrenci Takip Paneli*
 
 ---
 
-## 🎯 Projenin Amacı
+🔍 Proje Tanımı
+
+> Yapay zeka destekli, özel gereksinimli öğrencilere yönelik geliştirilen gözlem ve gelişim takip platformu
+
+**Beni Anla**, öğretmenlerin sınıf ortamında öğrencilerini daha yakından tanımasını kolaylaştıran, davranış ve gelişim süreçlerini kayıt altına almasını ve kişiselleştirilmiş öneriler almasını sağlayan web tabanlı bir sistemdir. Yapay zeka desteğiyle, öğretmene öğrencinin dikkat süresi, duygu durumu ve sosyal etkileşim verileri hakkında analiz sunarak karar destek sağlar.
+
+---
+
+## 🎯 Hedefler
 
 Bu proje, özel gereksinimli öğrencilerle çalışan öğretmenlerin;
 
 * Günlük gözlemlerini kolayca kaydedebilmesini,
 * Yapay zeka destekli analizlerle öğrenciyi daha iyi tanımasını,
-* Gelişimi izleyip kişiselleştirilmiş eğitim planları oluşturmasını sağlamak amacıyla geliştirilmiştir.
+* Gelişim sürecine göre bireyselleştirilmiş eğitim önerileri oluşturmak
+
+amacıyla desteklenmesidir.
 
 ---
-## 🧩 Özellikler
 
-* 👤 **Öğrenci Profili**: Temel bilgiler, güçlü/zayıf yönler, bireyselleştirilmiş notlar
-* 📅 **Günlük Gözlem**: Öğretmenin seçtiği parametrelere göre öğrenci analizi
+## 🧩 Temel Bileşenler ve Özellik Seti
+
+* 👤 **Öğrenci Profili**: Bireyselleştirilmiş notlar
+* 📅 **Günlük Gözlem**: Parametre bazlı öğrenci analizi
 * 📈 **Gelişim Takibi**: Grafikler ve örüntü tespiti (örneğin haftalık dikkat eğrisi)
 * 🧠 **AI Destekli Öneriler**: Etkinlik veya müdahale önerileri
-* 📝 **Raporlama**: Yazdırılabilir PDF raporlar, veli görüşme çıktıları
+* 📝 **Raporlama**: Veli görüşme çıktıları
 * 🔐 **Güvenli Giriş Sistemi**: Yetkilendirme, kullanıcı yönetimi
+  
 ---
 
-# Hedef Kitle
-"Beni Anla – Özel Öğrenci Takip Paneli", özel gereksinimli öğrencilerle çalışan eğitimciler başta olmak üzere, öğrencilerin gelişimini çok yönlü desteklemeyi hedefleyen tüm paydaşlara hitap eder:
+## Hedef Kullanıcılar
+*Beni Anla*, özel gereksinimli öğrencilerle çalışan eğitimciler başta olmak üzere, öğrencilerin gelişimini çok yönlü desteklemeyi hedefleyen tüm paydaşlara hitap eder:
 
 👩‍🏫 Özel Eğitim Öğretmenleri:
 Öğrencilerin bireysel gelişimlerini sistemli şekilde izlemek, günlük gözlemlerle kayıt altına almak ve yapay zekâ destekli analizlerle daha etkili eğitim planları oluşturmak isteyen öğretmenler.
@@ -63,7 +77,8 @@ Bu proje, özel gereksinimli öğrencilerle çalışan öğretmenlerin;
 Veriye dayalı bireyselleştirilmiş eğitim yaklaşımlarını inceleyen ve uygulamaya aktarmak isteyen araştırmacılar, danışmanlar.
 
 ---
-## 🧪 Kullanılan Teknolojiler
+
+## 🛠 Kullanılan Teknolojiler
 
 | Katman     | Teknoloji                      |
 | ---------- | ------------------------------ |
@@ -71,19 +86,22 @@ Veriye dayalı bireyselleştirilmiş eğitim yaklaşımlarını inceleyen ve uyg
 | Frontend   | React.js                       |
 | Veritabanı | PostgreSQL                     |
 | AI Modülü  | Scikit-learn / TensorFlow Lite |
-| Diğer      | JWT Auth, REST API, Bootstrap  |
+| Ek Bileşenler  | JWT Auth, REST API, Bootstrap  |
 
 ---
-# Product BackLog URL
-
-Proje planlama ve görev takibi süreçlerini ? uygulamasından gerçekleştirdik. Link:
-![Image](https://github.com/user-attachments/assets/9e612cd3-a4a2-41cb-aefd-d9e18ca0178b)
-
----
+# 🚧  Proje Geliştirme Süreci
 
 ## 🔄 Scrum Süreci
 
+## 💡 Uygulanan Yöntem
+
 Proje çevik geliştirme (Agile) prensiplerine göre **SCRUM metodolojisi** ile yürütülmektedir:
+
+### Ekip Rolleri
+
+* *Scrım Master, Product Owner, Developer:* Gülşah Kadıoğlu, Orkun Koçak
+
+Toplantılar, düzenli *Daily Scrum* görüşmeleri ile Google Meet ve WhatsApp üzerinden yürütülmektedir.
 
 | Süreç             | Tanım                                                                                      |
 | ----------------- | ------------------------------------------------------------------------------------------ |
@@ -92,15 +110,23 @@ Proje çevik geliştirme (Agile) prensiplerine göre **SCRUM metodolojisi** ile 
 | **Sprint Süresi** | 2 hafta                                                                                    |
 | **Toplantılar**   | Günlük 15 dakikalık "Daily Scrum", sprint başında planlama ve sonunda demo & retrospective |
 
-### Product Backlog (Örnek)
+---
 
-* Öğrenci profil yönetimi
-* Günlük gözlem formu
-* Yapay zeka ile öneri motoru
+### Product BackLog
+
+Üründe ihtiyaç duyulan her şeyin sıralandığı liste:
+
+* Öğrenci profili modülü
+* Gözlem kayıt formu
+* Yapay zekâ öneri sistemi
 * Gelişim analizi ve raporlama
-* Kullanıcı yönetimi (öğretmen / admin)
-* Erişilebilirlik özellikleri (renk körlüğü, sesli yardım vb.)
+* Kullanıcı Yönetimi
+* Erişilebilirlik desteği
 
+Proje planlama ve görev takibi süreçlerini Trello uygulamasından gerçekleştirdik. Link:
+![Image](https://github.com/user-attachments/assets/9e612cd3-a4a2-41cb-aefd-d9e18ca0178b)
+
+---
 
 ## 📌 Sprint 1 Raporu– Planlama ve Temel Yapı Kurulumu (20 Haziran – 6 Temmuz)
 
@@ -113,6 +139,8 @@ Proje çevik geliştirme (Agile) prensiplerine göre **SCRUM metodolojisi** ile 
 * Takım içi görev dağılımının yapılması
 * AI analiz altyapısının temellerinin atılması (tasarım düzeyinde)
 
+---
+
 ### ✅ Tamamlanması Beklenen İşler (User Stories)
 
 | ID   | User Story                                              | Kabul Kriteri                                          |
@@ -123,6 +151,8 @@ Proje çevik geliştirme (Agile) prensiplerine göre **SCRUM metodolojisi** ile 
 | US04 | Takım olarak görev dağılımını görmek istiyorum          | `README.md` altında roller tanımlanmış olmalı          |
 | US05 | Yapay zeka öneri sisteminin mantığını anlamak istiyorum | AI mantığı `docs/ai_plan.md` dosyasında açıklanmalı    |
 
+---
+
 ### 🧱️ Teknik Görevler
 
 * [x] Flask backend iskeletinin kurulması
@@ -130,11 +160,15 @@ Proje çevik geliştirme (Agile) prensiplerine göre **SCRUM metodolojisi** ile 
 * [ ] PostgreSQL veritabanı bağlantısı kurulması
 * [ ] Öğrenci modeli (`Student`) oluşturulması
 * [ ] Basit API uçları (`/students`, `/observations`)
+* [ ] Yapay zeka mimarisinin kod tasarımı
+* [ ] İlk test verisiyle demo ekran oluşturulması
 * [ ] Form sayfalarının ilk prototipleri
 * [ ] GitHub `dev`, `main` branch yapısının oluşturulması
 
-### 🔁 Sprint 1 Daily Scrum Notları (Örnek)
+---
 
+### 🔁 Sprint 1 Daily Scrum Notları (Örnek)
+Toplantı yapılmış, tüm görevler anlık olarak Sprint Board üzerinden kontrol edilmiştir.
 ```
 🧑‍💻 Bugün: Öğrenci formu arayüzünü tamamladım  
 🔧 Yarın: Gözlem API'sini test edeceğim  
@@ -146,12 +180,19 @@ Proje çevik geliştirme (Agile) prensiplerine göre **SCRUM metodolojisi** ile 
 * [ ] `screenshots/` klasörüne ilk arayüz görselleri eklenecek
 * [ ] `docs/sprint1_summary.md` dosyasında Sprint Review özeti yer alacak
 
-### 🧠 Sprint Retrospective (Sorular)
+### 🧠 Sprint Retrospective
 
-* Bu sprintte ne iyi gitti?
-* Neleri geliştirebiliriz?
-* Takım içinde ne öğrendik?
-* Bir sonraki sprint için hangi riskleri gördük?
+### Güçlü Yanlar
+
+* Net görev dağılımı ve mikro ekip yapısı
+* Etkili iletişim ve hızlı karar alma
+* Zamanında toplantılar, aktif katılım
+
+### Gelişmeye Açık Alanlar
+
+* Teknik konularda bilgi paylaşımının artırılması
+* Geliştirme sırasında zaman tahmini konusunda iyileşme
+* Test sürecine daha erken aşamada başlama ihtiyacı
 
 ---
 
@@ -165,7 +206,7 @@ Proje çevik geliştirme (Agile) prensiplerine göre **SCRUM metodolojisi** ile 
 | Ekip İçi İletişim ve Görev Paylaşımı    | Rol paylaşımı, aktif katkı, toplantı katılımı                   | 10          |
 | Ürün İlerlemesi                         | Görsel veya fonksiyonel ilerleme örnekleri                      | 10          |
 
-**Toplam Puan:** /50
+*🔚 Toplam: 50 / 50*
 
 ---
 ![Image](https://github.com/user-attachments/assets/2db8c0d8-f2f0-45ec-9e69-57d92ab7ff5d)
@@ -179,6 +220,7 @@ Proje çevik geliştirme (Agile) prensiplerine göre **SCRUM metodolojisi** ile 
 ![Image](https://github.com/user-attachments/assets/5a810ddb-f160-4a52-ba78-e05863829f12)
 
 ![Image](https://github.com/user-attachments/assets/20f2ffaa-1eb2-4f76-829e-9f6ad4766cb8)
+
 ## 🚀 Kurulum
 
 ### 1. Reposu klonlayın
