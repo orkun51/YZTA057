@@ -2,7 +2,7 @@
 
 # Projenin Amblemi
 
-<img width="1024" height="1024" alt="Image" src="https://github.com/user-attachments/assets/63a2a5c1-8e1a-48b1-8ff1-7ec8758a3637" />
+<img width="1024" height="1024" alt="Image" src="Screenshot 2025-07-27 at 00.47.14.png" />
 
 ---
 
