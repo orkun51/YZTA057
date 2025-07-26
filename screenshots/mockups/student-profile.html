@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öğrenci Profili - Ahmet Yılmaz</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f7fa;
+            min-height: 100vh;
+        }
+        
+        .navbar {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .breadcrumb {
+            background: white;
+            padding: 15px 30px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .breadcrumb a {
+            color: #667eea;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        
+        .main-content {
+            padding: 30px;
+        }
+        
+        .profile-header {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        
+        .profile-avatar {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3em;
+            font-weight: bold;
+        }
+        
+        .profile-info h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .profile-meta {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .meta-item {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        
+        .meta-label {
+            font-weight: 600;
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+        
+        .meta-value {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        
+        .special-needs {
+            background: linear-gradient(45deg, #ff6b6b, #feca57);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+            display: inline-block;
+        }
+        
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .info-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .card-title {
+            font-size: 1.5em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .info-list {
+            list-style: none;
+        }
+        
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #f8f9fa;
+        }
+        
+        .info-item:last-child {
+            border-bottom: none;
+        }
+        
+        .info-label {
+            font-weight: 600;
+            color: #6c757d;
+        }
+        
+        .info-value {
+            color: #2c3e50;
+            text-align: right;
+        }
+        
+        .strengths-list, .challenges-list {
+            list-style: none;
+        }
+        
+        .strength-item, .challenge-item {
+            background: #f8f9fa;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid;
+        }
+        
+        .strength-item {
+            border-left-color: #2ecc71;
+            background: #d5f4e6;
+        }
+        
+        .challenge-item {
+            border-left-color: #e74c3c;
+            background: #fdf2f2;
+        }
+        
+        .observations-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .obs-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+        
+        .add-obs-btn {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .observation-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .obs-date {
+            color: #6c757d;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        
+        .obs-content {
+            color: #2c3e50;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .obs-tags {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .tag {
+            background: #667eea;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: 600;
+        }
+        
+        .tag.attention { background: #f39c12; }
+        .tag.social { background: #2ecc71; }
+        .tag.emotional { background: #e74c3c; }
+        
+        .progress-charts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        
+        .chart-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .chart-title {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .chart-circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .chart-attention {
+            background: conic-gradient(#667eea 0deg 252deg, #e9ecef 252deg 360deg);
+        }
+        
+        .chart-social {
+            background: conic-gradient(#2ecc71 0deg 288deg, #e9ecef 288deg 360deg);
+        }
+        
+        .chart-emotional {
+            background: conic-gradient(#f39c12 0deg 216deg, #e9ecef 216deg 360deg);
+        }
+        
+        .chart-percentage {
+            color: #2c3e50;
+            font-size: 0.9em;
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .btn {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+        }
+        
+        .btn-secondary {
+            background: linear-gradient(45deg, #2ecc71, #27ae60);
+            color: white;
+        }
+        
+        .btn-tertiary {
+            background: linear-gradient(45deg, #f39c12, #e67e22);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <div style="font-size: 1.5em;">🧠</div>
+            <h2>Beni Anla</h2>
+        </div>
+        <div>Gülşah Öğretmen</div>
+    </nav>
+
+    <div class="breadcrumb">
+        <a href="#">Ana Sayfa</a> / <a href="#">Öğrencilerim</a> / Ahmet Yılmaz
+    </div>
+
+    <main class="main-content">
+        <div class="profile-header">
+            <div class="profile-avatar">AY</div>
+            <div class="profile-info">
+                <h1>Ahmet Yılmaz</h1>
+                <div class="profile-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Sınıf</span>
+                        <span class="meta-value">3-A</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Yaş</span>
+                        <span class="meta-value">9 yaşında</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Öğrenci No</span>
+                        <span class="meta-value">2024-3A-15</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Kayıt Tarihi</span>
+                        <span class="meta-value">15 Eylül 2023</span>
+                    </div>
+                </div>
+                <div class="special-needs">🧩 Otizm Spektrum Bozukluğu</div>
+            </div>
+        </div>
+
+        <div class="profile-grid">
+            <div class="info-card">
+                <h2 class="card-title">📋 Genel Bilgiler</h2>
+                <ul class="info-list">
+                    <li class="info-item">
+                        <span class="info-label">Doğum Tarihi</span>
+                        <span class="info-value">12 Mart 2015</span>
+                    </li>
+                    <li class="info-item">
+                        <span class="info-label">Veli</span>
+                        <span class="info-value">Ayşe Yılmaz</span>
+                    </li>
+                    <li class="info-item">
+                        <span class="info-label">Telefon</span>
+                        <span class="info-value">0532 123 45 67</span>
+                    </li>
+                    <li class="info-item">
+                        <span class="info-label">Acil Durum</span>
+                        <span class="info-value">0532 987 65 43</span>
+                    </li>
+                    <li class="info-item">
+                        <span class="info-label">Tanı Tarihi</span>
+                        <span class="info-value">5 Yaşında</span>
+                    </li>
+                    <li class="info-item">
+                        <span class="info-label">İlaç Kullanımı</span>
+                        <span class="info-value">Yok</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h2 class="card-title">💪 Güçlü Yönler</h2>
+                <ul class="strengths-list">
+                    <li class="strength-item">Matematik konularında yetenek</li>
+                    <li class="strength-item">Hafıza kapasitesi güçlü</li>
+                    <li class="strength-item">Dikkat süresi arttı</li>
+                    <li class="strength-item">Rutinlere uyum sağlıyor</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="info-card" style="margin-bottom: 30px;">
+            <h2 class="card-title">🎯 Gelişim Alanları</h2>
+            <ul class="challenges-list">
+                <li class="challenge-item">Sosyal etkileşimde zorlanma</li>
+                <li class="challenge-item">Göz teması kurmakta güçlük</li>
+                <li class="challenge-item">Değişikliklere karşı dirençli</li>
+                <li class="challenge-item">İletişimde kelime dağarcığı sınırlı</li>
+            </ul>
+        </div>
+
+        <div class="observations-section">
+            <div class="obs-header">
+                <h2 class="card-title">📝 Son Gözlemler</h2>
+                <button class="add-obs-btn">
+                    <span>➕</span>
+                    Yeni Gözlem Ekle
+                </button>
+            </div>
+            
+            <div class="observation-card">
+                <div class="obs-date">📅 23 Haziran 2024 - 14:30</div>
+                <div class="obs-content">
+                    Matematik dersinde çok başarılıydı. 10'a kadar toplama işlemlerini doğru yaptı. 
+                    Ancak grup çalışmasına katılmak istemedi. Kendi başına çalışmayı tercih etti. 
+                    Öğretmenle göz teması kurdu ve yardım istedi.
+                </div>
+                <div class="obs-tags">
+                    <span class="tag">Matematik</span>
+                    <span class="tag attention">Dikkat</span>
+                    <span class="tag social">Sosyal</span>
+                </div>
+            </div>
+
+            <div class="observation-card">
+                <div class="obs-date">📅 20 Haziran 2024 - 10:15</div>
+                <div class="obs-content">
+                    Teneffüste diğer çocuklarla oynamak istedi ama nasıl yaklaşacağını bilemedi. 
+                    Uzaktan izledi. Öğretmen desteğiyle oyuna dahil oldu ve 5 dakika oynadı.
+                </div>
+                <div class="obs-tags">
+                    <span class="tag social">Sosyal</span>
+                    <span class="tag emotional">Duygusal</span>
+                </div>
+            </div>
+
+            <div class="observation-card">
+                <div class="obs-date">📅 18 Haziran 2024 - 09:00</div>
+                <div class="obs-content">
+                    Sabah rutinini sorunsuz tamamladı. Çantasını kendi yerleştirdi ve 
+                    derslik düzenini korudu. Sınıf kurallarına uydu.
+                </div>
+                <div class="obs-tags">
+                    <span class="tag">Rutin</span>
+                    <span class="tag attention">Uyum</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="progress-charts">
+            <div class="chart-card">
+                <div class="chart-title">Dikkat & Odaklanma</div>
+                <div class="chart-circle chart-attention">70%</div>
+                <div class="chart-percentage">Gelişim gösteriyor</div>
+            </div>
+            <div class="chart-card">
+                <div class="chart-title">Sosyal Etkileşim</div>
+                <div class="chart-circle chart-social">80%</div>
+                <div class="chart-percentage">İyi seviyede</div>
+            </div>
+            <div class="chart-card">
+                <div class="chart-title">Duygusal Düzenleme</div>
+                <div class="chart-circle chart-emotional">60%</div>
+                <div class="chart-percentage">Geliştirilmeli</div>
+            </div>
+        </div>
+
+        <div class="action-buttons">
+            <button class="btn btn-primary">
+                <span>📊</span>
+                Detaylı Rapor Oluştur
+            </button>
+            <button class="btn btn-secondary">
+                <span>🤖</span>
+                AI Önerilerini Gör
+            </button>
+            <button class="btn btn-tertiary">
+                <span>✏️</span>
+                Profili Düzenle
+            </button>
+        </div>
+    </main>
+</body>
+</html> 
