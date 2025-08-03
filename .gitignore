@@ -1,26 +1,2 @@
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-env/
-venv/
-pip-wheel-metadata/
-.idea/
-
-# Node.js
-node_modules/
-npm-debug.log
-yarn-error.log
-dist/
-build/
-
-# İşletim Sistemi
-.DS_Store
-Thumbs.db
-
-# Hassas Bilgiler
 .env
-*.env
-secrets.yml
+node_modules/
