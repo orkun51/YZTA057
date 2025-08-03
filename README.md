@@ -49,10 +49,7 @@ YZTA 4.0 Mezuniyet Bootcamp AI 57.2.0
 ### ⚡ 2 Aylık MVP Hedefleri
 | Hedef                          | Metrik                     | Başarı Kriteri          | Durum |
 |--------------------------------|----------------------------|-------------------------|-------|
-| Pilot hastanelerde FL altyapısı | 3 merkez                   | %100 uptime            | 🟢 Planlandı |
 | Model performansı              | Sensitivity ≥%85, AUC ≥0.90 | Test verisinde doğrulama | 🟡 Devam Ediyor |
-| KVKK/HIPAA uyumu               | Etik kurul onayı           | Doküman teslimi         | 🔴 Başlamadı |
-| Kullanıcı eğitimi              | 20+ radyolog sertifikası   | Anket memnuniyet ≥4.5/5 | 🟢 Planlandı |
 
 🟡 Devam Ediyor, ✅ Tamamlandı, 🔴 Başlamadı, 🟢 Planlandı
 
@@ -60,8 +57,6 @@ YZTA 4.0 Mezuniyet Bootcamp AI 57.2.0
 | Hedef                          | Kilometre Taşı             | Kritik Tarih           |
 |--------------------------------|----------------------------|------------------------|
 | Ulusal tarama programı         | SBÜ protokolüne giriş      | 2025-Q1               |
-| SGK geri ödeme                 | Teminat listesi başvurusu  | 2025-Q3               |
-| Bölgesel genişleme             | 2 MENA ülkesinde pilot     | 2025-Q4               |
 | Model sertifikasyonu           | Accuracy ≥%90 + QIDW       | 2025-Q2               |
 
 ---
@@ -142,55 +137,68 @@ YZTA 4.0 Mezuniyet Bootcamp AI 57.2.0
 
 ---
 
-## 📅 Daily Scrum Kayıtları (20 Haziran 2025 - 20 Temmuz 2025)
+## 📅 Daily Scrum Kayıtları (20 Haziran 2025 - 3 Ağustos 2025)
 
-| Tarih       | Yapılanlar                                                                 | Engeller                          | Sonraki Adımlar                                | İlgili Sprint Hedefi                  |
-|-------------|---------------------------------------------------------------------------|-----------------------------------|-----------------------------------------------|---------------------------------------|
-| 20 Haz 2025 | Planlama belgeleri gözden geçirildi, veri kaynakları önceliklendirildi    | FL altyapı kaynak seçimi          | DICOM pipeline taslağı oluştur                | FL Sunucu Kurulumu 🟢                |
-| 21 Haz 2025 | FL altyapısı için kaynaklar incelendi, DICOM pipeline taslağı hazırlandı  | Radyolog eğitim içeriği eksik     | Eğitim modülü şeması çıkar                   | Radyolog Eğitim Planı 🟢             |
-| 22 Haz 2025 | HIPAA uyum süreci taslakları hazırlandı, takvim Miro'ya aktarıldı         | Etik kurul onay süreci belirsiz   | KVKK dokümanlarını tamamla                   | HIPAA/KVKK Uyum 🔴                   |
-| 23 Haz 2025 | Model eğitim stratejisi araştırıldı, benzer projeler analiz edildi        | Test senaryoları eksik            | Mock veri ile test senaryosu oluştur          | Model Eğitimi 🔴                     |
-| 24 Haz 2025 | Test verisi senaryosu planlandı, gereksinim analizi tamamlandı            | Frontend tasarım araçları seçimi  | Mockup'ları Figma'da oluştur                 | MVP Modül Şeması ✅                  |
-| 25 Haz 2025 | Frontend mockup taslakları oluşturuldu, README güncellendi                | GitHub CI/CD ayarları eksik       | GitHub Actions workflow'u hazırla            | Tech Stack Belirleme ✅              |
-| 26 Haz 2025 | GitHub issue şablonları yazıldı, DICOM tag analiz raporu hazırlandı       | Veri anonimleştirme toolu eksik   | PyDICOM ile otomatik tag temizleme scripti    | Veri Altyapısı Hazırlığı 🟢          |
-| 27 Haz 2025 | KVKK başvuru taslağı oluşturuldu, çalışma planı Trello'ya aktarıldı       | Hukuk ekibi onayı bekleniyor      | Etik kurul başvuru dokümanlarını tamamla     | HIPAA/KVKK Uyum 🔴                   |
-| 28 Haz 2025 | FL test senaryoları yazılmaya başlandı, veri şemaları çıkarıldı           | Test verisi boyutu yetersiz       | Synthetic data generator için araştırma yap   | Model Eğitimi 🔴                     |
-| 29 Haz 2025 | DICOM anonymizer tool'un ilk versiyonu geliştirildi, veri kalite metriği dashboard'u oluşturuldu | Pixel masking algoritmasında hata | OpenCV ile görsel doğrulama modülü ekle      | Veri Altyapısı Hazırlığı 🟢          |
-| 30 Haz 2025 | FL sunucu kurulumu için Docker image'ları optimize edildi                  | GPU kaynak tahsisinde gecikme     | Havelsan AI çipi için benchmark testleri yap  | FL Sunucu Kurulumu 🟢                |
-| 01 Tem 2025 | Versiyonlama kuralları belirlendi, sunum görselleri güncellendi           | Deployment ortamı ayarlanmadı     | AWS FL sunucusu için instance oluştur        | FL Sunucu Kurulumu 🟢                |
-| 02 Tem 2025 | Backend endpoint taslağı çıkarıldı, deployment süreci planlandı           | API güvenlik testleri eksik       | FastAPI için JWT auth entegrasyonu yap        | Tech Stack Belirleme ✅              |
-| 03 Tem 2025 | Proje görsel amblemi oluşturuldu, kodlama standartları belirlendi         | CI/CD pipeline tamamlanmadı       | GitHub Actions ile unit test workflow'u kur   | MVP Modül Şeması ✅                  |
-| 04 Tem 2025 | Sistem mimarisi gözden geçirildi, çalışma planı Trello'ya aktarıldı       | Veri şemalarında tutarsızlık      | Veri modelini normalize et                   | Veri Altyapısı Hazırlığı 🟢          |
-| 05 Tem 2025 | EfficientNet-B4 modelinin ilk eğitimi başlatıldı, ROC eğrisi için metric collector eklendi | Eğitim süresi beklenenden uzun   | Havelsan çipinde mixed-precision training test et | Model Eğitimi 🔴                     |
-| 06 Tem 2025 | Radyolog eğitim platformu için AWS SageMaker LMS entegrasyonu yapıldı     | Video içeriklerin yüklenmesi gecikti | Türkçe closed-captioning scripti yaz        | Radyolog Eğitim Planı 🟢             |
-| 07 Tem 2025 | Model parametreleri değerlendirildi, versiyonlama kuralları belirlendi    | GPU kaynak sıkıntısı              | Havelsan AI çipi için optimizasyon yap       | Model Eğitimi 🔴                     |
-| 08 Tem 2025 | Sunum görselleri güncellendi, backend endpoint taslağı çıkarıldı          | Auth mekanizması test edilmedi    | OAuth2.0 entegrasyonu için test senaryosu    | Tech Stack Belirleme ✅              |
-| 09 Tem 2025 | Deployment süreci planlandı, mock verilerle eğitim testi simüle edildi    | Canlı ortam izinleri bekleniyor   | Staging ortamı için erişim talebi oluştur    | FL Sunucu Kurulumu 🟢                |
-| 10 Tem 2025 | Proje görsel amblemi oluşturuldu, dış bağımlılıklar listelendi            | Lisans maliyetleri hesaplanacak   | Açık kaynak alternatifleri araştır           | MVP Modül Şeması ✅                  |
-| 11 Tem 2025 | Sprint değerlendirme maddeleri oluşturuldu, son rötuşlar yapıldı          | Demo videoları çekilmedi          | Ürün tanıtım videosu storyboard'u hazırla    | Radyolog Eğitim Planı 🟢             |
-| 12 Tem 2025 | HIPAA uyumluluk testleri için synthetic veri generator tamamlandı         | Şifreleme performansı düşük      | SEAL kütüphanesi için hardware acceleration araştır | HIPAA/KVKK Uyum 🔴                   |
-| 13 Tem 2025 | Model explainability raporları Grad-CAM ile otomatize edildi               | Radyolog feedback loop kurulmadı  | SHAP değerlerini raporlara ekleyen modül yaz | Explainable AI 🚧                    |
-| 14 Tem 2025 | HIPAA uyum test senaryoları yazıldı, veri şemaları revize edildi          | Şifreleme kütüphanesi seçilemedi | SEAL vs PySyft karşılaştırması yap           | HIPAA/KVKK Uyum 🔴                   |
-| 15 Tem 2025 | Radyolog eğitim içeriği için LMS entegrasyonu başlatıldı                  | Eğitim videoları yüklenmedi       | Video prodüksiyon ekibiyle görüşme ayarla    | Radyolog Eğitim Planı 🟢             |
-| 16 Tem 2025 | Anonim vaka verisi entegrasyonu için pipeline oluşturuldu                  | Veri kalite kontrolü eksik        | Veri doğrulama scriptleri yaz                | Veri Altyapısı Hazırlığı 🟢          |
-| 17 Tem 2025 | Model eğitim optimizasyonları yapıldı, performans metrikleri oluşturuldu  | ROC eğrisi görselleştirilmedi     | Metric logger için dashboard entegrasyonu     | Model Eğitimi 🔴                     |
-| 18 Tem 2025 | Model parametreleri değerlendirildi, mock verilerle eğitim testi yapıldı  | Deployment stratejisi net değil   | Canlı ortam deployment planını oluştur       | Model Eğitimi 🔴                     |
-| 19 Tem 2025 | Kodlama standartları belirlendi, dış bağımlılıklar listelendi            | Sertifikasyon süreci başlamadı    | HIPAA uyum testlerini planla                 | HIPAA/KVKK Uyum 🔴                   |
-| 20 Tem 2025 | Sprint değerlendirme maddeleri oluşturuldu, son rötuşlar yapıldı          | Radyolog eğitim platformu kurulmadı | LMS entegrasyonu için araştırma yap         | Radyolog Eğitim Planı 🟢             |
+| Tarih       | Yapılması planlanan                                                                 |
+|-------------|---------------------------------------------------------------------------|
+| 20 Haz 2025 | Aşama 1: Proje Başlatma ve Temel Kurulum: Proje gereksinimlerini ve kapsamını detaylandırın, ana özellik setini belirle.    |
+| 21 Haz 2025 | Aşama 1: Proje Başlatma ve Temel Kurulum: Git deposunu başlatın ve temel proje dizin yapısını oluştur (backend/, fl-node/, frontend/, mobile-app/).  |
+| 22 Haz 2025 | Aşama 1: Proje Başlatma ve Temel Kurulum: docker-compose.yml dosyasını temel servisler (db, redis, backend, fl-server, fl-node) için tasarlayın ve ilk taslağını oluştur.         |
+| 23 Haz 2025 | Aşama 1: Proje Başlatma ve Temel Kurulum: Her bir alt proje için (backend/, fl-node/, frontend/, mobile-app/) gerekli requirements.txt veya package.json dosyalarını oluşturun ve temel bağımlılıkları listele.   |
+| 24 Haz 2025 | Aşama 1: Proje Başlatma ve Temel Kurulum: Her bir servis için (backend/Dockerfile, fl-node/Dockerfile, backend/fl_server/Dockerfile) başlangıç Dockerfile'larını oluştur.            |
+| 25 Haz 2025 | Aşama 2: Backend Geliştirme: backend/app/main.py içinde FastAPI uygulamasını başlatın ve temel router'ları (auth, reports, cases, model_versions) tanımla.                |
+| 26 Haz 2025 | Aşama 2: Backend Geliştirme: PostgreSQL veritabanı bağlantısını (backend/app/db/session.py) ve yapılandırmasını (backend/app/core/config.py) ayarla.       |
+| 27 Haz 2025 | Aşama 2: Backend Geliştirme: Alembic kullanarak veritabanı migrasyon sistemini kurun (alembic.ini, alembic/env.py).      |
+| 28 Haz 2025 | Aşama 2: Backend Geliştirme: Veritabanı modellerini (backend/app/models/user.py, report.py, case.py, fl_metrics.py, model_version.py, medical_image.py) Veritabanı ORM ile tanımla          |
+| 29 Haz 2025 | Aşama 2: Backend Geliştirme: Temel CRUD operasyonlarını (backend/app/crud/user.py, report.py, case.py, medical_image.py, model_version.py) uygula |
+| 30 Haz 2025 | Aşama 2: Backend Geliştirme: Kullanıcı kayıt, giriş, profil yönetimi ve yetkilendirme için API uç noktalarını (backend/app/api/auth.py) oluştur (JWT tabanlı kimlik doğrulama                 |
+| 01 Tem 2025 | Aşama 2: Backend Geliştirme: Raporlar için API uç noktalarını (backend/app/api/reports.py) oluştur (rapor oluşturma, listeleme, FL metrikleri).          |
+| 02 Tem 2025 | Aşama 2: Backend Geliştirme: Vakalar ve tıbbi görüntüler için API uç noktalarını (backend/app/api/cases.py) oluştur (vaka oluşturma, görüntü yükleme, listeleme).          |
+| 03 Tem 2025 | Aşama 2: Backend Geliştirme: Model versiyonları için API uç noktalarını (backend/app/api/model_versions.py) oluştur (model versiyonlarını listeleme).        |
+| 04 Tem 2025 | Aşama 2: Backend Geliştirme: Homomorfik şifreleme servisini (backend/app/encryption_service.py) TenSEAL ile entegre edin ve genel  bağlamı sun.      |
+| 05 Tem 2025 | Aşama 3: Federated Learning Sunucusu Geliştirme: Flower kütüphanesini kullanarak federated learning sunucusunu (backend/fl_server/server.py) uygula |
+| 06 Tem 2025 | Aşama 3: Federated Learning Sunucusu Geliştirme: SecureAggregationStrategy sınıfını tanımlayın ve şifreli ağırlık toplama mantığını uygula    |
+| 07 Tem 2025 | Aşama 3: Federated Learning Sunucusu Geliştirme: Toplanan modelleri (.pth dosyaları olarak) sunucu tarafında güvenli bir şekilde kaydetme mekanizmasını (backend/fl_server/server.py içinde) uygulayın. |
+| 08 Tem 2025 | Aşama 3: Federated Learning Sunucusu Geliştirme: FL tur metriklerini ve kaydedilen model versiyonlarını backend veritabanına kaydetme mantığını entegre et.          |
+| 09 Tem 2025 | Aşama 3: Federated Learning Sunucusu Geliştirme: FL sunucusunun backend API ile iletişimini sağla (örn. istemci kaydı, görev dağıtımı için gerekli olabilecek ek uç noktalar).   |
+| 10 Tem 2025 | Aşama 4: Federated Learning Düğümü (İstemci) Geliştirme: Veri yükleyiciyi (fl-node/data_loader.py) uygula (örneğin, kanser tarama verilerini yükleme ve ön  işleme).           |
+| 11 Tem 2025 | Aşama 4: Federated Learning Düğümü (İstemci) Geliştirme: PyTorch kullanarak federated learning model mimarisini (fl-node/model.py) tanımla.         |
+| 12 Tem 2025 | Aşama 4: Federated Learning Düğümü (İstemci) Geliştirme: Flower istemcisini (fl-node/client.py) uygulayın: get_parameters, fit, evaluate metodlarını tanımla.        |
+| 13 Tem 2025 | Aşama 4: Federated Learning Düğümü (İstemci) Geliştirme: İstemci tarafında model eğitim döngüsünü (fl-node/client.py içinde) uygula.              |
+| 14 Tem 2025 | Aşama 4: Federated Learning Düğümü (İstemci) Geliştirme: Eğitilmiş model ağırlıklarını TenSEAL kullanarak şifreleme ve serileştirme mantığını uygula.         |
+| 15 Tem 2025 | Aşama 4: Federated Learning Düğümü (İstemci) Geliştirme: Backend'den şifreleme bağlamını alma mekanizmasını (fl-node/client.py içinde) uygula.                 |
+| 16 Tem 2025 | Aşama 4: Federated Learning Düğümü (İstemci) Geliştirme: Sahte model oluşturma betiğini (fl-node/create_fake_model.py) geliştir (geliştirme ve test amaçlı).                 |
+| 17 Tem 2025 | Aşama 5: Frontend (Web Arayüzü) Geliştirme: Next.js uygulamasını başlat ve temel proje yapısını kur. |
+| 18 Tem 2025 | Aşama 5: Frontend (Web Arayüzü) Geliştirme: Kullanıcı kayıt ve giriş arayüzlerini (frontend/src/app/login/page.tsx, register/page.tsx) tasarla ve backend API ile entegre et. |
+| 19 Tem 2025 | Aşama 5: Frontend (Web Arayüzü) Geliştirme: API iletişim servisini (frontend/src/services/api.ts) oluşturun ve JWT token yönetimini uygula.           |
+| 20 Tem 2025 | Aşama 5: Frontend (Web Arayüzü) Geliştirme: Analiz raporlarını listeleyen ve detaylarını gösteren bileşenleri (frontend/src/components/ReportsList.tsx, frontend/src/app/reports/[id]/page.tsx) geliştirin.         |
+| 21 Tem 2025 | Aşama 5: Frontend (Web Arayüzü) Geliştirme: Vaka yönetimi için bileşenleri (frontend/src/components/CasesList.tsx, frontend/src/app/cases/create/page.tsx, frontend/src/app/cases/[id]/page.tsx) geliştirin (vaka listeleme, oluşturma, görüntü yükleme).          |
+| 22 Tem 2025 | Aşama 5: Frontend (Web Arayüzü) Geliştirme: Federated learning sürecini izlemek için bir kontrol paneli (frontend/src/app/dashboard/page.tsx) oluşturun ve FL metriklerini görselleştir.         |
+| 23 Tem 2025 | Aşama 5: Frontend (Web Arayüzü) Geliştirme: Uygulama genelinde navigasyonu ve layout'u (frontend/src/app/layout.tsx) yapılandır.          |
+| 24 Tem 2025 | Aşama 5: Frontend (Web Arayüzü) Geliştirme: Kullanıcı profili ve ayarları için temel bir arayüz (frontend/src/app/profile/page.tsx) geliştir.         |
+| 25 Tem 2025 | Aşama 6: Mobil Uygulama Geliştirme: React Native uygulamasını başlatın ve temel proje yapısını kur         |
+| 26 Tem 2025 | Aşama 6: Mobil Uygulama Geliştirme: Kullanıcı kayıt ve giriş ekranlarını (mobile-app/src/screens/LoginScreen.tsx, RegisterScreen.tsx) tasarla ve backend API ile entegre et.         |
+| 27 Tem 2025 | Aşama 6: Mobil Uygulama Geliştirme: Push bildirim token'ını alıp backend'e kaydetme işlevini (mobile-app/App.tsx) uygula.         |
+| 28 Tem 2025 | Aşama 6: Mobil Uygulama Geliştirme: Raporları ve vakaları listeleyen, detaylarını gösteren ekranları (mobile-app/src/screens/HomeScreen.tsx,  ReportDetailScreen.tsx, CasesScreen.tsx, CaseDetailScreen.tsx) geliştir.         |
+| 29 Tem 2025 | Aşama 6: Mobil Uygulama Geliştirme: Mobil uygulama için navigasyon yapısını (mobile-app/src/navigation/AppNavigator.tsx, AppTabs.tsx) oluştur.         |
+| 30 Tem 2025 | Aşama 6: Mobil Uygulama Geliştirme: Kullanıcı profili ekranını (mobile-app/src/screens/ProfileScreen.tsx) geliştir.         |
+| 31 Tem 2025 | Aşama 7: Entegrasyon, Optimizasyon ve Dağıtım: Tüm servislerin (backend, FL sunucusu, FL düğümü, frontend, mobil uygulama) Docker Compose ile yerel olarak sorunsuz bir şekilde başlatıldığından ve birbirleriyle iletişim kurabildiğinden emin ol.          |
+| 1 Agus 2025 | Aşama 7: Entegrasyon, Optimizasyon ve Dağıtım:          |
+| 2 Agus 2025 | Aşama 7: Entegrasyon, Optimizasyon ve Dağıtım:          |
+| 3 Agus 2025 | Aşama 7: Entegrasyon, Optimizasyon ve Dağıtım:          |
+---
+
+## 🔄 Sprint Review & Raporu (20 Haziran - 3 Ağustos 2025)
+
+## 🔄 Sprint 1–2-3 Planlama & Hazırlık
+
+### 🧩 Sprint 1-2-3 Teması
+
+> **Proje Başlatma ve Temel Kurulum, Backend Geliştirme, Federated Learning Sunucusu Geliştirme, Frontend (Web Arayüzü) Geliştirme ve Entegrasyon, Optimizasyon ve Dağıtım **
 
 ---
 
-## 🔄 Sprint Review & Raporu (20 Haziran - 20 Temmuz 2025)
-
-## 🔄 Sprint 1–2 Planlama & Hazırlık
-
-### 🧩 Sprint Teması
-
-> **MVP’ye giden yolda FL altyapısının, veri pipeline'ının ve model test ortamının planlanması**
-
----
-
-### 🎯 Sprint Hedefleri ve Durumu
+### 🎯 Sprint 1-2-3 Hedefleri ve Durumu
 
 | İş Kalemi                            | Durum        | Açıklama                                                              |
 | ------------------------------------ | ------------ | --------------------------------------------------------------------- |
@@ -201,7 +209,7 @@ YZTA 4.0 Mezuniyet Bootcamp AI 57.2.0
 | MVP modül şeması + proje takvimi     | ✅ Tamamlandı | Miro üzerinden sistem mimarisi ve gant takvimi çizildi                |
 | Model eğitimi (ilk testler)          | 🔴 Başlamadı | EfficientNet-B4 ile ilk test eğitimleri yapılacak                     |
 | HIPAA/KVKK uyum dokümantasyonu       | 🔴 Başlamadı | Etik kurul başvurusu için gerekli belgeler hazırlanacak               |
-| Radyolog eğitim planı                | 🟢 Planlandı | LMS platform entegrasyonu öncesi içerik ve kullanıcı akışı tasarlandı |
+
 
 ---
 
@@ -214,7 +222,7 @@ YZTA 4.0 Mezuniyet Bootcamp AI 57.2.0
 
 ---
 
-### 📊 Hazırlık Düzeyi (Sprint 1–2)
+### 📊 Hazırlık Düzeyi (Sprint 1–2-3)
 
 | Kriter                       | Durum | Açıklama                                         |
 | ---------------------------- | ----- | ------------------------------------------------ |
@@ -227,16 +235,15 @@ YZTA 4.0 Mezuniyet Bootcamp AI 57.2.0
 
 ---
 
-### 🔍 Notlar ve Öncelikler (Sonraki Sprint'e Hazırlık)
+### 🔍 Notlar ve Öncelikler
 
 * 🎯 İlk odak: **Veri pipeline kurulumu + FL sunucusunun devreye alınması**
 * 🔐 Regülasyon belgeleri olmadan test verisiyle bile model eğitimi başlamamalı
-* 🎓 Radyolog eğitimi planı hazır, ancak içerik ve platform kurulumuna geçilmedi
 * 📦 Model eğitimi yapılabilmesi için **anonim veri aktarımı ön koşul**
 
 ---
 
-### 🧠 Sprint Sonu Notları (Retrospective)
+### 🧠 Sprint 1-2-3 Sonu Notları (Retrospective)
 
 **Güçlü Yönler**
 
@@ -247,11 +254,11 @@ YZTA 4.0 Mezuniyet Bootcamp AI 57.2.0
 **İyileşmesi Gerekenler**
 
 * Zaman yönetimi: Etik süreçlerin gecikmesi
-* Belgeleme önceliklendirmesi (özellikle KVKK/HIPAA)
+* Test ve docker
 
 ---
 
-## 📊 Sprint 1 ve 2 Tamamlanması Tahmin Edilen Puan
+## 📊 Sprint 1, 2, 3 Tamamlanması Tahmin Edilen Puan
 
 | Kriter                                  | Açıklama                                                        | Puan (0-10) |
 | --------------------------------------- | --------------------------------------------------------------- | ----------- |
