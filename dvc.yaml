@@ -1,0 +1,26 @@
+
+    stages:
+      validate:
+        cmd: python src/data/validate.py data/raw data/validated_files.txt
+        deps:
+          - src/data/validate.py
+          - data/raw
+        outs:
+          - data/validated_files.txt
+
+      anonymize:
+        cmd: python src/data/anonymize.py data/validated_files.txt data/anonymized
+        deps:
+          - src/data/anonymize.py
+          - data/validated_files.txt
+        outs:
+          - data/anonymized
+
+      preprocess:
+        cmd: python src/data/preprocess.py data/anonymized data/preprocessed
+        deps:
+          - src/data/preprocess.py
+          - data/anonymized
+        outs:
+          - data/preprocessed
+    
