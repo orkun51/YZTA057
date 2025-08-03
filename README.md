@@ -282,3 +282,220 @@ YZTA 4.0 Mezuniyet Bootcamp AI 57.2.0
 <img width="1024" height="1024" alt="Image" src="https://github.com/user-attachments/assets/b8132cb1-ec30-4783-88d7-21bb2c77466a" />
 
 ---
+# Federated Cancer Screening Platform
+
+This project implements a federated learning-based cancer screening platform, allowing medical institutions to collaboratively train AI models without sharing sensitive patient data. It consists of a FastAPI backend, a React Native mobile application, and a Next.js web application, along with a federated learning node.
+
+## Features
+
+- **Secure User Authentication & Authorization:** Role-based access control for doctors and administrators across web and mobile platforms.
+- **Case Management:** Doctors can create, view, and manage patient cases on both web and mobile interfaces.
+- **Medical Image Upload:** Securely upload mammogram images associated with patient cases via the mobile application.
+- **Federated Learning Integration:** Collaborative model training with secure aggregation using Homomorphic Encryption (TenSEAL). Model versioning and management are supported.
+- **FL Metrics Dashboard:** Visualize federated learning round metrics (accuracy, loss) on the web interface.
+- **FL Round Initiation:** Administrators can initiate new federated learning rounds directly from the web dashboard.
+- **User Profile Management:** Users can view and update their profile information (email, password) on both web and mobile.
+- **Push Notifications:** Mobile application supports push notifications for important updates.
+- **XAI (Explainable AI) Features:** (Future/Planned) Generate heatmaps for analysis reports.
+
+## Technologies Used
+
+**Backend:**
+- FastAPI (Python)
+- SQLAlchemy (ORM)
+- PostgreSQL (Database)
+- Alembic (Database Migrations)
+- Celery (Asynchronous Tasks)
+- passlib, python-jose (Authentication)
+- TenSEAL (Homomorphic Encryption)
+
+**Mobile Application:**
+- React Native
+- Expo (for development convenience)
+- Axios (HTTP Client)
+- React Navigation (Navigation)
+- React Native Paper (UI Components)
+- React Native Keychain (Secure Storage)
+- Expo Image Picker (Image Selection)
+- Expo Notifications (Push Notifications)
+
+**Web Application (Frontend):**
+- Next.js (React Framework)
+- Tailwind CSS (Styling)
+- Axios (HTTP Client)
+- Chart.js, React-Chartjs-2 (Data Visualization)
+
+**Federated Learning Node:**
+- Flower (Federated Learning Framework)
+- PyTorch (Deep Learning)
+- TenSEAL (Homomorphic Encryption)
+
+## Getting Started
+
+Follow these steps to set up and run the project locally.
+
+### Prerequisites
+
+- Docker and Docker Compose (Recommended for easy setup)
+- Node.js and npm (for web and mobile applications)
+- Python and pip (for backend and FL node)
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/orkun51/YZTA057.git
+cd YZTA057
+```
+
+### 2. Backend Setup
+
+Navigate to the `backend` directory:
+
+```bash
+cd backend
+```
+
+**a. Environment Variables:**
+
+Create a `.env` file by copying the example:
+
+```bash
+cp .env.example .env
+```
+
+Open the newly created `.env` file and update the `SECRET_KEY` with a strong, unique string (at least 32 characters long). You can also adjust database credentials if needed.
+
+**b. Install Python Dependencies:**
+
+```bash
+pip install -r requirements.txt
+```
+
+**c. Build and Run Backend Services (Docker Compose):**
+
+This will build the Docker images and start the PostgreSQL database, Redis, and the FastAPI backend.
+
+```bash
+docker-compose up --build -d
+```
+
+**d. Run Database Migrations:**
+
+Apply the database migrations to create the necessary tables. Ensure your Docker containers are running (`docker-compose up -d`).
+
+```bash
+docker-compose run --rm backend alembic upgrade head
+```
+
+### 3. Web Application Setup
+
+Navigate to the `frontend` directory:
+
+```bash
+cd frontend
+```
+
+**a. Install Node.js Dependencies:**
+
+```bash
+npm install
+```
+
+**b. Environment Variables:**
+
+Create a `.env.local` file in the `frontend` directory and add your backend API URL:
+
+```
+NEXT_PUBLIC_API_BASE_URL=http://localhost:8000
+```
+
+### 4. Mobile Application Setup
+
+Navigate to the `mobile-app` directory:
+
+```bash
+cd mobile-app
+```
+
+**a. Install Node.js Dependencies:**
+
+```bash
+npm install
+```
+
+**b. Environment Variables:**
+
+Create a `.env` file by copying the example:
+
+```bash
+cp .env.example .env
+```
+
+Open the `.env` file and update `API_URL` to point to your backend. If running Docker locally, this will typically be `http://127.0.0.1:8000` (or your machine's IP address if testing on a physical device).
+
+### 5. Running the Applications
+
+**a. Start Backend (if not already running):**
+
+From the project root, ensure Docker Compose services are up:
+
+```bash
+docker-compose up -d
+```
+
+**b. Start Web Application:**
+
+From the `frontend` directory:
+
+```bash
+npm run dev
+```
+
+Open your browser and navigate to `http://localhost:3000`.
+
+**c. Start Mobile Application:**
+
+From the `mobile-app` directory, run the application on an Android emulator/device or iOS simulator/device:
+
+```bash
+npm run android
+# OR
+npm run ios
+```
+
+**d. Start FL Server:**
+
+From the `backend` directory:
+
+```bash
+python -m fl_server.server
+```
+
+**e. Start FL Node (Client):**
+
+From the `fl-node` directory:
+
+```bash
+python -m client
+```
+
+## Usage
+
+Once the applications are running:
+
+1.  **Register & Login:** Use either the web or mobile app to register a new user (e.g., `doctor@example.com`, password: `password`). Log in with the newly created credentials.
+2.  **Manage Cases:** Create new patient cases and upload mammogram images via the mobile app. View and manage cases on both web and mobile.
+3.  **View Reports:** View analysis reports on both web and mobile.
+4.  **FL Dashboard:** Navigate to the FL Dashboard on the web interface (`http://localhost:3000/fl-dashboard`) to view federated learning metrics and initiate new FL rounds.
+5.  **Model Versioning:** Access the Model Versions page on the web interface (`http://localhost:3000/model-versions`) to see saved model versions.
+6.  **User Profile:** Manage your user profile on both web and mobile applications.
+
+## Contributing
+
+Feel free to contribute to this project. Please follow standard GitHub flow (fork, branch, pull request).
+
+## License
+
+This project is licensed under the MIT License - see the `LICENSE` file for details.
+
+---
