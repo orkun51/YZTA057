@@ -182,10 +182,10 @@ YZTA 4.0 Mezuniyet Bootcamp AI 57.2.0
 | 28 Tem 2025 | Aşama 6: Mobil Uygulama Geliştirme: Raporları ve vakaları listeleyen, detaylarını gösteren ekranları (mobile-app/src/screens/HomeScreen.tsx,  ReportDetailScreen.tsx, CasesScreen.tsx, CaseDetailScreen.tsx) geliştir.         |
 | 29 Tem 2025 | Aşama 6: Mobil Uygulama Geliştirme: Mobil uygulama için navigasyon yapısını (mobile-app/src/navigation/AppNavigator.tsx, AppTabs.tsx) oluştur.         |
 | 30 Tem 2025 | Aşama 6: Mobil Uygulama Geliştirme: Kullanıcı profili ekranını (mobile-app/src/screens/ProfileScreen.tsx) geliştir.         |
-| 31 Tem 2025 | Aşama 7: Entegrasyon, Optimizasyon ve Dağıtım: Tüm servislerin (backend, FL sunucusu, FL düğümü, frontend, mobil uygulama) Docker Compose ile yerel olarak sorunsuz bir şekilde başlatıldığından ve birbirleriyle iletişim kurabildiğinden emin ol.          |
-| 1 Agus 2025 | Aşama 7: Entegrasyon, Optimizasyon ve Dağıtım:          |
-| 2 Agus 2025 | Aşama 7: Entegrasyon, Optimizasyon ve Dağıtım:          |
-| 3 Agus 2025 | Aşama 7: Entegrasyon, Optimizasyon ve Dağıtım:          |
+| 31 Tem 2025 | Aşama 7: Entegrasyon, Optimizasyon ve Dağıtım: Tüm Dockerfile'ları ve docker-compose.yml dosyasını üretim ortamı için optimize et.          |
+| 1 Agus 2025 | Aşama 7: Entegrasyon, Optimizasyon ve Dağıtım: Ortam değişkenlerinin güvenli ve esnek bir şekilde yönetildiğinden emin ol (örn. .env dosyaları, Docker Compose ortam değişkenleri).         |
+| 2 Agus 2025 | Aşama 7: Entegrasyon, Optimizasyon ve Dağıtım: Tüm servislerin (backend, FL sunucusu, FL düğümü, frontend, mobil uygulama) Docker Compose ile yerel olarak sorunsuz bir şekilde başlatıldığından ve birbirleriyle iletişim kurabildiğinden emin ol         |
+| 3 Agus 2025 | Aşama 7: Entegrasyon, Optimizasyon ve Dağıtım: Temel günlük kaydı (logging) ve hata izleme mekanizmalarını kur         |
 ---
 
 ## 🔄 Sprint Review & Raporu (20 Haziran - 3 Ağustos 2025)
