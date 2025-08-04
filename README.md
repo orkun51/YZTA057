@@ -278,7 +278,7 @@ YZTA 4.0 Mezuniyet Bootcamp AI 57.2.0
 https://www.kaggle.com/datasets/paultimothymooney/breast-histopathology-images
 
 https://youtu.be/WdezyFmUIUs?si=uCO_PYCIc4wzSDhf
-
+dosyaları tam yükleyemedim boyutla ilgili sorun yaşıyorum
 ---
 
 # Ürün Durum Görseli
