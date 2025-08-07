@@ -86,3 +86,26 @@
   ve altyapı otomasyonu (CI/CD, Docker, DVC) profesyonel bir mühendislik kültürünü yansıtıyor. Projenin
   başarısı, bu karmaşık bileşenlerin ne kadar uyumlu çalıştığına ve özellikle veri güvenliği ve gizliliği
   gibi kritik alanlardaki uygulamaların ne kadar sağlam olduğuna bağlı olacaktır.
+
+  Update 07.08.2025 : Docker Desktop üzerinde model çalıştırmak istediğinde, yetersiz RAM nedeniyle konteynerler çökmüş olabilir veya model başlatılamamış. Docker Desktop şu anda 3.775 GiB RAM (yaklaşık 3.8 GB) kullanıyor. Bu, sistemin geri kalanına neredeyse hiç RAM bırakmıyor.
+
+  🔍 Proje Ne Yapıyor?
+  Dağıtık (federated) makine öğrenmesi uygulaması.
+
+Yani birden fazla işlemci (node) farklı yerlerde veri eğitiyor, sonra bilgiyi merkezi sunucuya gönderiyor.
+
+Bu sistemde şu servisler var:
+
+PostgreSQL (db) → Veritabanı
+
+Redis → İşler arası mesajlaşma
+
+FastAPI (backend) → API servisi
+
+Celery worker → Arka planda görevleri çalıştırıyor
+
+Flower server → Federated learning sunucusu
+
+FL-node → Bir FL istemci düğümü
+
+💡 Bunlar hep birlikte çalışarak bir makine öğrenimi modelini dağıtık olarak eğitiyorlar.
