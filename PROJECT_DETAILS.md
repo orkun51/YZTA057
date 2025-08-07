@@ -109,3 +109,19 @@ Flower server → Federated learning sunucusu
 FL-node → Bir FL istemci düğümü
 
 💡 Bunlar hep birlikte çalışarak bir makine öğrenimi modelini dağıtık olarak eğitiyorlar.
+
+## 🧪 Docker Kullanırken Karşılaşılan Sorunun Olası Sebebi:
+
+Docker Desktop üzerinde model çalıştırmak istediğinde, **yetersiz RAM** nedeniyle konteynerler çökmüş olabilir veya model başlatılamamış.
+
+Docker Desktop şu anda **3.775 GiB RAM (yaklaşık 3.8 GB)** kullanıyor. Bu, sistemin geri kalanına neredeyse hiç RAM bırakmıyor.
+Tüm servisleri aynı anda çalıştırman mümkün değil (RAM ve CPU yetersiz).
+
+Ama sadece veritabanı + backend + belki redis ile bazı şeyleri test edilebilir.
+
+---
+
+
+<img width="946" height="673" alt="Image" src="https://github.com/user-attachments/assets/80d56890-8952-4dfa-9446-72a333b671ec" />
+Redis sunucusuna başarıyla bağlanıldı. CLI üzerinden veri eklenip RedisInsight arayüzünde doğrulandı. Projede Redis, önbellekleme ve veri paylaşımı için kullanılmaktadır.
+
