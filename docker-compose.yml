@@ -1,0 +1,111 @@
+
+
+services:
+  db:
+    image: postgres:16
+    container_name: postgres_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    env_file:
+      - ./backend/.env
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: redis:7.2-alpine
+    container_name: redis
+    ports:
+      - "6379:6379"
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: backend_api
+    depends_on:
+      - db
+      - redis
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./backend/.env
+    volumes:
+      - ./secure_storage:/app/secure_storage
+      - ./backend:/app # Mount backend code for live changes
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 768M
+
+  celery-worker:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: celery_worker
+    command: celery -A app.worker.celery_app worker --loglevel=info
+    depends_on:
+      - redis
+      - backend
+    volumes:
+      - ./backend:/app # Mount backend code for celery worker
+    deploy:
+      resources:
+        limits:
+          cpus: '0.3'
+          memory: 512M
+
+  flower-server:
+    build:
+      context: ./backend/fl_server
+      dockerfile: Dockerfile
+    container_name: flower_server
+    depends_on:
+      - backend
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/app # Mount entire project root to /app
+    command: python /app/backend/fl_server/server.py # Adjust command to reflect new path
+    deploy:
+      resources:
+        limits:
+          cpus: '0.3'
+          memory: 1G
+
+  fl-node:
+    build:
+      context: ./fl-node
+      dockerfile: Dockerfile
+    container_name: fl_node_client
+    depends_on:
+      - flower-server
+    volumes:
+      - ./fl-node:/app # Mount fl-node code
+      - ./fl-node/data:/app/data # Mount data for the client
+    command: python -m client # This should match the CMD in fl-node/Dockerfile
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 1.5G
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: frontend_ui
+    depends_on:
+      - backend
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://backend:8000 # Use service name for inter-container communication
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 1G
+
+volumes:
+  postgres_data:
